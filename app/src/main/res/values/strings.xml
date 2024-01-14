@@ -12,5 +12,20 @@
     <string name="_1">1</string>
     <string name="divide">/</string>
     <string name="minus">-</string>
+    <string name="multiply">*</string>
     <string name="plus">+</string>
+    <string name="_clr" >CLR</string>
+    <string name="_0">0</string>
+    <string name="_equal">=</string>
+
+    <style name="CalculatorButton">
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:onClick">onDigit</item>
+        <item name="android:background">@color/grey</item>
+
+    </style>
+
 </resources>
