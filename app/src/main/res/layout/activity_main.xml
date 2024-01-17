@@ -106,16 +106,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
         <Button
             android:id="@+id/btnZero"
             style="@style/CalculatorButton"
-            android:layout_weight="2"
+            android:layout_weight="1"
+            android:onClick="onDecimalePoint"
+            android:text="@string/dote" />
+        <Button
+            android:id="@+id/btnDote"
+            style="@style/CalculatorButton"
+            android:layout_weight="1"
             android:text="@string/_0" />
 
         <Button
             android:id="@+id/btnCLR"
-            style="@style/CalculatorButton"
+            style="@style/CalculatorButton"   android:layout_weight="2"
             android:text="@string/_clr" />
 
         <Button

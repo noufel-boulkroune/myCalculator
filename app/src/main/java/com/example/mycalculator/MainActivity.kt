@@ -9,6 +9,8 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     private var tvInput: TextView? = null
+    var lastNumeric : Boolean = false
+    var lastDot : Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -19,11 +21,15 @@ class MainActivity : AppCompatActivity() {
 
 
     fun onDigit(view: View) {
+        lastNumeric = true
+        lastDot = false
 //            Toast.makeText(
 //                this, "Button Clicked", Toast.LENGTH_LONG
 //
 //            ).show()
         if ((view as Button).text == "CLR") {
+            lastDot = false
+            lastNumeric = false
 
             tvInput?.text = ""
         } else {
@@ -32,6 +38,15 @@ class MainActivity : AppCompatActivity() {
             tvInput?.append((view as Button).text)
         }
 
+
+    }
+
+    fun onDecimalePoint(view: View){
+        if (lastNumeric && !lastDot){
+            tvInput?.append(".")
+            lastDot = true
+            lastNumeric = false
+        }
 
     }
 }
