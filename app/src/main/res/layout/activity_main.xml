@@ -41,6 +41,7 @@
 
         <Button
             android:id="@+id/btnDivide"
+            android:onClick="onOperatot"
             style="@style/CalculatorButton"
             android:text="@string/divide" />
 
@@ -70,6 +71,7 @@
         <Button
             android:id="@+id/btnMultiply"
             style="@style/CalculatorButton"
+            android:onClick="onOperatot"
             android:text="@string/multiply" />
 
     </LinearLayout>
@@ -98,6 +100,7 @@
         <Button
             android:id="@+id/btnMinus"
             style="@style/CalculatorButton"
+            android:onClick="onOperatot"
             android:text="@string/minus" />
 
     </LinearLayout>
@@ -126,6 +129,7 @@
         <Button
             android:id="@+id/btnPlus"
             style="@style/CalculatorButton"
+            android:onClick="onOperatot"
             android:text="@string/plus" />
 
     </LinearLayout>
