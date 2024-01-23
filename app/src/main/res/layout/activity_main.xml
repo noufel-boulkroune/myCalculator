@@ -143,6 +143,7 @@
             android:id="@+id/btnEqual"
             style="@style/CalculatorButton"
             android:layout_weight="2"
+            android:onClick="onEqual"
             android:text="@string/_equal"
 
             />
